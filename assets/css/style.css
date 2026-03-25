@@ -1,0 +1,46 @@
+/* Tailwind Configuration */
+<script>
+    tailwind.config = {
+        darkMode: 'class', 
+        theme: {
+            extend: {
+                colors: {
+                    brandCream: '#f2ece4',
+                    brandCharcoal: '#1c1a19',
+                    brandOlive: '#7a8c7c',
+                    cardLight: '#ffffff',
+                    cardDark: '#2d2a28',
+                    textLight: '#33302e',
+                    textDark: '#f2ece4',
+                }
+            }
+        }
+    }
+</script>
+
+/* Custom Styles */
+body { 
+    transition: background-color 0.4s ease, color 0.4s ease; 
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; 
+}
+
+.loading-spinner { 
+    border: 3px solid rgba(122, 140, 124, 0.1); 
+    border-radius: 50%; 
+    border-top: 3px solid #7a8c7c; 
+    width: 24px; 
+    height: 24px; 
+    animation: spin 1s linear infinite; 
+}
+
+@keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+
+/* Outline Logic for Dark Mode */
+.dark .outline-on-dark {
+    outline: 1.5px solid #7a8c7c;
+    outline-offset: -1px;
+}
+
+.project-logo { transition: opacity 0.4s ease; }
+.swiper-pagination-bullet-active { background: #7a8c7c !important; }
+.section-divider { width: 100%; border-top: 1px solid; height: 1px; margin: 2rem 0; opacity: 0.6; }
