@@ -7,6 +7,26 @@
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            darkMode: 'class', 
+            theme: {
+                extend: {
+                    colors: {
+                        brandCream: '#f2ece4',
+                        brandCharcoal: '#1c1a19',
+                        brandOlive: '#7a8c7c',
+                        cardLight: '#ffffff',
+                        cardDark: '#2d2a28',
+                        textLight: '#33302e',
+                        textDark: '#f2ece4',
+                    }
+                }
+            }
+        }
+    </script>
+    
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body class="bg-brandCream dark:bg-brandCharcoal text-textLight dark:text-textDark min-h-screen transition-colors duration-500">
